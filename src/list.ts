@@ -18,7 +18,7 @@ const list: {
     "netflix.com": {
         name: "Netflix",
         color: "#141414",
-        icon: NetflixIcon,
+        icon: "netflix.svg",
         categories: ["entertainment"],
     },
     "github.com": {
@@ -91,7 +91,6 @@ const list: {
         name: "LastPass",
         categories: ["work"],
         color: "#D32D27",
-        icon: LastPassIcon,
     },
     "slack.com": {
         name: "Slack",

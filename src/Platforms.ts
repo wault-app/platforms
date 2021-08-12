@@ -9,4 +9,10 @@ export default class Platforms {
             categories: [],
         };
     }
+
+    public static getAll(): PlatformType[] {
+        return Object.keys(list).map((platform) => (
+            Platforms.get(platform)
+        ));
+    }
 }
