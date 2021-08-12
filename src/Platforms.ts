@@ -2,6 +2,10 @@ import { PlatformType } from "@wault/typings";
 import aliases from "./aliases";
 import list from "./list";
 
+export type PlatformTypeWithDomain = PlatformType & {
+    domain: string;
+};
+
 export default class Platforms {
     public static get(hostname: string): PlatformType {
         return list[hostname] || list[aliases[hostname]] || {
@@ -10,9 +14,10 @@ export default class Platforms {
         };
     }
 
-    public static getAll(): PlatformType[] {
-        return Object.keys(list).map((platform) => (
-            Platforms.get(platform)
-        ));
+    public static getAll(): PlatformTypeWithDomain[] {
+        return Object.keys(list).map((domain) => ({
+            domain,
+            ...Platforms.get(domain),        
+        }));
     }
 }
