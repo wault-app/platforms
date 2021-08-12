@@ -1,0 +1,26 @@
+{
+  "name": "@wault/platforms",
+  "version": "1.0.0",
+  "description": "Predefined list of platforms",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wault-app/platforms.git"
+  },
+  "keywords": [
+    "platforms",
+    "wault"
+  ],
+  "author": "Gál Péter (pepyta)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/wault-app/platforms/issues"
+  },
+  "homepage": "https://github.com/wault-app/platforms#readme",
+  "dependencies": {
+    "@wault/typings": "git+https://github.com/wault-app/typings.git",
+    "typescript": "^4.3.5"
+  }
+}
